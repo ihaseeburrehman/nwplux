@@ -1,0 +1,98 @@
+{
+ "Luxembourg": {
+  "station": "Steinsel",
+  "sid": "021",
+  "height": 247,
+  "dist": "8",
+  "hours": 48,
+  "img": "img/verif_Luxembourg.png",
+  "ver": "202610311002",
+  "lines": [
+   [
+    "Temperature",
+    "typical miss: NWPLux-OP 2.4\u00b0 (too warm) \u00b7 DWD ICON-D2 2.6\u00b0 (too warm) \u00b7 <b>M\u00e9t\u00e9o-France AROME 2.3\u00b0 (too warm)</b>"
+   ],
+   [
+    "Rain",
+    "measured 0.0 mm \u00b7 forecast: <b>NWPLux-OP 0.0</b> \u00b7 DWD ICON-D2 0.0 \u00b7 M\u00e9t\u00e9o-France AROME 0.0 mm"
+   ],
+   [
+    "Wind",
+    "not measured at this station"
+   ]
+  ],
+  "note": "Blue: measured. Lines: forecasts as published at the time (7\u201312 h ahead). Best in bold. Temperature adjusted to station height, wind to 2 m. Last measurement Sat 09:00."
+ },
+ "Esch-sur-Alzette": {
+  "station": "Oberkorn",
+  "sid": "005",
+  "height": 378,
+  "dist": "6",
+  "hours": 48,
+  "img": "img/verif_Esch-sur-Alzette.png",
+  "ver": "202610311002",
+  "lines": [
+   [
+    "Temperature",
+    "typical miss: NWPLux-OP 1.0\u00b0 (too cold) \u00b7 <b>DWD ICON-D2 0.4\u00b0</b> \u00b7 M\u00e9t\u00e9o-France AROME 0.9\u00b0 (too cold)"
+   ],
+   [
+    "Rain",
+    "measured 0.0 mm \u00b7 forecast: <b>NWPLux-OP 0.0</b> \u00b7 DWD ICON-D2 0.0 \u00b7 M\u00e9t\u00e9o-France AROME 0.0 mm"
+   ],
+   [
+    "Wind",
+    "measured 1 km/h \u00b7 forecast: NWPLux-OP 10 \u00b7 DWD ICON-D2 6 \u00b7 <b>M\u00e9t\u00e9o-France AROME 6</b> km/h"
+   ]
+  ],
+  "note": "Blue: measured. Lines: forecasts as published at the time (7\u201312 h ahead). Best in bold. Temperature adjusted to station height, wind to 2 m. Last measurement Sat 09:00."
+ },
+ "Diekirch": {
+  "station": "Bettendorf",
+  "sid": "036",
+  "height": 187,
+  "dist": "4",
+  "hours": 48,
+  "img": "img/verif_Diekirch.png",
+  "ver": "202610311002",
+  "lines": [
+   [
+    "Temperature",
+    "typical miss: NWPLux-OP 4.1\u00b0 (too warm) \u00b7 DWD ICON-D2 3.4\u00b0 (too warm) \u00b7 <b>M\u00e9t\u00e9o-France AROME 2.7\u00b0 (too warm)</b>"
+   ],
+   [
+    "Rain",
+    "measured 0.8 mm \u00b7 forecast: NWPLux-OP 0.0 \u00b7 <b>DWD ICON-D2 0.0</b> \u00b7 M\u00e9t\u00e9o-France AROME 0.0 mm"
+   ],
+   [
+    "Wind",
+    "measured 1 km/h \u00b7 forecast: NWPLux-OP 9 \u00b7 DWD ICON-D2 6 \u00b7 <b>M\u00e9t\u00e9o-France AROME 5</b> km/h"
+   ]
+  ],
+  "note": "Blue: measured. Lines: forecasts as published at the time (7\u201312 h ahead). Best in bold. Temperature adjusted to station height, wind to 2 m. Last measurement Sat 09:00."
+ },
+ "Grevenmacher": {
+  "station": "Grevenmacher",
+  "sid": "012",
+  "height": 190,
+  "dist": "0",
+  "hours": 48,
+  "img": "img/verif_Grevenmacher.png",
+  "ver": "202610311002",
+  "lines": [
+   [
+    "Temperature",
+    "typical miss: NWPLux-OP 1.9\u00b0 (too cold) \u00b7 DWD ICON-D2 1.5\u00b0 \u00b7 <b>M\u00e9t\u00e9o-France AROME 1.2\u00b0 (too warm)</b>"
+   ],
+   [
+    "Rain",
+    "measured 0.4 mm \u00b7 forecast: NWPLux-OP 0.0 \u00b7 <b>DWD ICON-D2 0.0</b> \u00b7 M\u00e9t\u00e9o-France AROME 0.0 mm"
+   ],
+   [
+    "Wind",
+    "measured 3 km/h \u00b7 forecast: NWPLux-OP 7 \u00b7 <b>DWD ICON-D2 5</b> \u00b7 M\u00e9t\u00e9o-France AROME 5 km/h"
+   ]
+  ],
+  "note": "Blue: measured. Lines: forecasts as published at the time (7\u201312 h ahead). Best in bold. Temperature adjusted to station height, wind to 2 m. Last measurement Sat 09:00."
+ }
+}
