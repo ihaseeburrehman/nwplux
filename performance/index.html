@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forecast performance</title><style>
+:root{--bg:#f2f2f7;--card:#fff;--text:#1c1c1e;--muted:#6e6e73;--line:#e5e5ea;--accent:#0a84ff}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--card:#1c1c1e;--text:#f2f2f7;--muted:#98989d;--line:#38383a;--accent:#0a84ff}}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:14px 16px 40px} a{color:var(--accent);text-decoration:none;font-weight:600;font-size:14px}
+h1{font-size:24px;margin:10px 0 2px} .sub{color:var(--muted);font-size:14px;margin:0 0 14px}
+.card{background:var(--card);border-radius:14px;padding:14px 16px;margin:12px 0} .ch{font-size:13px;color:var(--muted);font-weight:600;margin-bottom:8px}
+.tw{overflow-x:auto} table{border-collapse:collapse;width:100%;font-size:14px} th,td{padding:7px 6px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:12px;color:var(--muted);font-weight:600;vertical-align:bottom} th:first-child,td:first-child{text-align:left}
+td i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px} tr.own td:first-child{font-weight:700}
+img{width:100%;height:auto} .two{display:grid;grid-template-columns:1fr 1fr;gap:12px} @media(max-width:620px){.two{grid-template-columns:1fr}}
+p.n{color:var(--muted);font-size:13px;line-height:1.45;margin:8px 0 0}
+</style></head><body><div class="wrap">
+<a href="../">‹ Forecast</a>
+<h1>Forecast performance</h1>
+<p class="sub">07 Nov – 20 Nov 2026 · next-day forecasts (12–36 h ahead) against measurements · all three systems on the same 56 forecast runs, times and stations</p>
+<div class="card"><div class="ch">Scores · best in bold</div><div class="tw"><table>
+<tr><th></th><th>Temperature<br>error °C</th><th>bias °C</th><th>correlation</th><th>Wind airport<br>error km/h</th><th>correlation</th><th>Rain ≥ 1 mm/6 h<br>ETS</th></tr>
+<tr class="own"><td><i style="background:#0072b2"></i>NWPLux-OP</td>
+<td>1.3</td><td>0.4</td><td>0.87</td>
+<td>3.5</td><td>0.91</td>
+<td>0.39</td></tr><tr><td><i style="background:#d55e00"></i>NWPLux-DA</td>
+<td>1.4</td><td>0.2</td><td>0.85</td>
+<td><b>3.3</b></td><td>0.92</td>
+<td>0.35</td></tr><tr><td><i style="background:#009e73"></i>GraphCastLux-OP</td>
+<td><b>1.0</b></td><td>0.4</td><td><b>0.92</b></td>
+<td>4.4</td><td><b>0.92</b></td>
+<td><b>0.69</b></td></tr></table></div>
+<p class="n">Error: mean absolute difference from the measurement (lower is better). Bias: on average too warm (+) or too cold (−). Correlation: 1 = forecast follows every rise and fall.
+ETS (equitable threat score): 0 = no better than chance, 1 = every rainy and dry 6 h period right. Temperature and rain at 39 AgriMeteo stations (10,455 values, 3555 rainy periods);
+wind at Luxembourg airport (270 values), because the AgriMeteo wind sensors are low and sheltered.</p></div>
+<div class="card"><div class="ch">Measured and forecast, mean of the stations</div><img src="series.png" alt="observed and forecast temperature and rain"></div>
+<div class="card"><div class="ch">Rain ≥ 1 mm in 6 h</div><div class="two"><img src="perfdiag.png" alt="performance diagram"><p class="n">Each dot is one system. Up = more of the rainy periods were forecast (hit rate). Right = fewer forecast rainy periods stayed dry (success ratio). Top right corner is perfect; the curves are the critical success index, the dashed lines the frequency bias (1 = rain forecast as often as it happened).</p></div></div>
+<p class="n">Same rules for all: model temperature moved to the station height (6.5 °C per km); stations with faulty sensors are left out. Updated daily, last 30 days. Built 21 Nov 2026 11:48 UTC.</p>
+</div></body></html>
